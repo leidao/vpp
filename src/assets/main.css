@@ -1,0 +1,98 @@
+@import './base.css';
+/* @import './element.scss'; */
+
+body{
+  height: 100vh;
+}
+#app{
+  height: 100%;
+  /* min-height: 780px; */
+  overflow: hidden;
+}
+.el-menu{
+  border: none !important;
+}
+
+.dx-el-popper{
+  background-color: transparent !important;
+  &.el-popper{
+    border: none !important;
+    top: 46px !important;
+  }
+ 
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #e4e4e4;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%, 0% 80%);
+    width: 92px;
+    height: 22px;
+    border: 1px solid;
+    background: #30527580;
+    border-image: linear-gradient(180deg, rgba(172.81004548072815, 204.5579954981804, 225.23104459047318, 0), rgba(172.81004548072815, 204.5579954981804, 225.23104459047318, 1)) 1 1;
+  }
+  .el-menu--popup{
+    background-color: transparent;
+    min-width: 114px;
+  }
+  .el-menu-item{
+    background: #252628 !important;
+    /* background-color: transparent !important; */
+  }
+
+  ::v-deep(.is-active) {
+    .wrap {
+      color: #fff;
+      background: linear-gradient(180deg, #7FCCEB 0%, rgba(38, 96, 149, 0.73) 100%);
+      border-image: linear-gradient(180deg, rgba(172.81004548072815, 204.5579954981804, 225.23104459047318, 0), rgba(172.81004548072815, 204.5579954981804, 225.23104459047318, 1)) 1 1;
+    }
+  }
+
+}
+
+.el-table {
+  background: transparent !important;
+
+  .el-table__header-wrapper {
+    .el-table__cell {
+      padding: 0px 4px;
+
+
+      .cell {
+        background: rgba(9, 60, 90, 1);
+        border-radius: 4px;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .el-table__inner-wrapper {
+    &::before {
+      background: transparent !important;
+    }
+  }
+
+  tr {
+    background: transparent !important;
+
+    th {
+      background: transparent !important;
+      border-bottom: none !important;
+    }
+
+    td {
+      background: transparent !important;
+      border-bottom: none !important;
+      color: #fff;
+      padding: 6px 0px !important;
+      .cell{
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+
+

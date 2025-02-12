@@ -1,0 +1,46 @@
+
+
+// styles/element/index.scss
+/* 只需要重写你需要的即可 */
+
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    "primary": (
+      "base": #274667,
+    ),
+    "success": (
+      "base": #8bc34a,
+    ),
+    "warning": (
+      "base": #ffc107,
+    ),
+    "danger": (
+      "base": #f56c6c,
+    ),
+    "error": (
+      "base": #ff5722,
+    ),
+    "info": (
+      "base": #909399,
+    ),
+  )
+);
+:root {
+  --el-fill-color-blank: rgba(37,90,125,0.56);
+  --el-border-color:#007d7b;
+  --el-checkbox-text-color:#007d7b;
+  .el-button--small{
+    --el-button-size:16px;
+  }
+  --el-component-size-small:18px;
+  --el-fill-color-light:#1f3339;
+  --el-fill-color-blank:transparent;
+  .el-input{
+    --el-input-text-color:#fff;
+  }
+}
+
+
+// 如果只是按需导入，则可以忽略以下内容。
+// 如果你想导入所有样式:
+// @use "element-plus/theme-chalk/src/index.scss" as *;
