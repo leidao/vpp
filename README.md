@@ -2,7 +2,7 @@
 
 虚拟电厂功能展示页面
 
-![Screenshot](vpp.mp4)
+![Screenshot](image.png)
 
 ```sh
 pnpm install
